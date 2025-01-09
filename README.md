@@ -8,4 +8,6 @@
 ## DESIGN
 
 - Figma
-- styled-components
+- css module
+- clsx
+- ~~styled-components~~(react 버전 이슈로 사용 x)
