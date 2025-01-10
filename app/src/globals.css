@@ -1,0 +1,90 @@
+@import url('./reset.css');
+@font-face {
+  font-family: 'Pretendard';
+  src: local('Pretendard'),
+    url('/fonts/PretendardVariable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* variable name: [component]-[keyword]-[propertiy] */
+:root {
+  --color-primary-100: #edfbd1;
+  --color-primary-200: #d6f8a4;
+  --color-primary-300: #b4eb73;
+  --color-primary-400: #91d74e;
+  --color-primary-500: #62bd1d;
+  --color-primary-600: #4aa215;
+  --color-primary-700: #35880e;
+  --color-primary-800: #236d09;
+  --color-primary-900: #175a05;
+  --color-success-100: #defcd8;
+  --color-success-200: #b8fab2;
+  --color-success-300: #8af18c;
+  --color-success-400: #69e378;
+  --color-success-500: #3cd15c;
+  --color-success-600: #2bb356;
+  --color-success-700: #1e964f;
+  --color-success-800: #137946;
+  --color-success-900: #0b6440;
+  --color-info-100: #d0e5fe;
+  --color-info-200: #a2c9fe;
+  --color-info-300: #74a9fe;
+  --color-info-400: #528dfd;
+  --color-info-500: #1961fc;
+  --color-info-600: #124ad8;
+  --color-info-700: #0c37b5;
+  --color-info-800: #072692;
+  --color-info-900: #041a78;
+  --color-warning-100: #fef4cb;
+  --color-warning-200: #fee698;
+  --color-warning-300: #fdd465;
+  --color-warning-400: #fbc23e;
+  --color-warning-500: #f9a600;
+  --color-warning-600: #d68700;
+  --color-warning-700: #b36b00;
+  --color-warning-800: #905100;
+  --color-warning-900: #773f00;
+  --color-danger-100: #ffdfd7;
+  --color-danger-200: #ffb8af;
+  --color-danger-300: #ff8a87;
+  --color-danger-400: #ff6974;
+  --color-danger-500: #ff3859;
+  --color-danger-600: #db2857;
+  --color-danger-700: #b71c53;
+  --color-danger-800: #93114c;
+  --color-danger-900: #7a0a47;
+  --color-grey-100: #f7f7f7;
+  --color-grey-200: #efeff0;
+  --color-grey-300: #d1d1d2;
+  --color-grey-400: #a5a5a6;
+  --color-grey-500: #6a6a6b;
+  --color-grey-600: #4d4d5c;
+  --color-grey-700: #35354d;
+  --color-grey-800: #21213e;
+  --color-grey-900: #141433;
+  --color-black: #1f1f1f;
+
+  --font-pretendard: 'Pretendard', sans-serif, system-ui;
+  --color-text-disabled: rgba(206, 206, 206, 1);
+  --color-bg-disabled: rgba(243, 243, 243, 1);
+  --btn-round-sm: 4px;
+  --btn-round-md: 8px;
+  --btn-round-lg: 12px;
+  --btn-round-full: 9999px;
+  --btn-font-size: 15px;
+}
+
+.font-pretendard {
+  font-family: var(--font-pretendard);
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
