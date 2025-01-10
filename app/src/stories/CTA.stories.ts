@@ -17,3 +17,10 @@ export const Example: Story = {
     children: '버튼'
   }
 }
+
+export const Disabled: Story = {
+  args: {
+    children: '지원기간이 아니에요',
+    disabled: true
+  }
+}
